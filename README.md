@@ -10,14 +10,14 @@ camelCase for the same purposes.
 Oasis offers a middleware that make this transformations of requests and responses
 to the Rack application.
 
-Both the snake and the camel are desert animals, that meet on Oasis.
+Both the snake and the camel meet at Oasis.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'oasis'
+gem 'oasis', git: 'https://source.xing.com/filipe-abreu/oasis.git'
 ```
 
 And then execute:
@@ -44,7 +44,6 @@ config.middleware.insert_after 'Oasis::RequestSnakelizer', 'Oasis::ResponseCamel
 ```
 
 Per controller:
-Application wide:
 ```
 use Oasis::RequestSnakelizer
 use Oasis::ResponseCamelizer
