@@ -17,7 +17,7 @@ Both the snake and the camel meet at Oasis.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'oasis', git: 'https://source.xing.com/filipe-abreu/oasis.git'
+gem 'oasis'
 ```
 
 And then execute:
